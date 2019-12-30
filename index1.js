@@ -22,6 +22,38 @@ function fun(){
 
         console.log(error);
     })
+
+
+    axios.post('http://localhost:3001/api',{
+        username:document.getElementById('username').value,
+        api1_1: 0,
+        api1_2: 0,
+        api1_3: 0,
+        api2_1: 0,
+        api2_2: 0,
+        api2_3: 0,
+        api3_1: 0,
+        api3_2: 0,
+        api3_3: 0,
+        api4_1: 0,
+        api4_2: 0,
+        api4_3: 0,
+        api5_1: 0,
+        api5_2: 0,
+        api5_3: 0,
+        api6_1: 0,
+        api6_2: 0,
+        api6_3: 0,
+        
+    })
+    .then((response)=>{
+
+        console.log("api");
+    })
+    .catch((error)=>{
+
+        console.log(error);
+    })
 }
 
 function funt(){
@@ -37,9 +69,9 @@ function funt(){
         
         if(response.data[0].password==pass && response.data[0].username==usern)
         {
-            localStorage.setItem("un",response.data[0].username);
+            sessionStorage.setItem("un",response.data[0].username);
             
-            window.open('dashboard.html');
+            window.open('dashboard.html','_self');
             
             
         }
