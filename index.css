@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    background-image: url("https://images.pexels.com/photos/533671/pexels-photo-533671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  /*background photo credits can be found here: https://www.pexels.com/photo/adventure-asphalt-california-country-533671/*/
+  
+  body {
+    font-family: "IM Fell English SC", serif;
+  }
+  
+  .logincontainer {
+    background-color: rgb(214, 216, 219, 0.2);
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    bottom: 2%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Loginfield {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    display: block;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border: 3px double black;
+    margin: 25px;
+    background-color: rgb(164, 196, 183, 0.6);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.4s;
+  }
+  .button:hover {
+    background-color: rgb(164, 196, 183, 0.8);
+  }
+  
+  .logindropdown-content {
+    display: none;
+    position: relative;
+    top: -2.5%;
+    left: -2.5%;
+    padding: 5px;
+    margin: 20px 0px;
+  }
+  .loginform {
+    width: 75%;
+    margin: 10px 47px;
+    display: block;
+    text-align: center;
+  }
+  input {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-family: "IM Fell English SC", serif;
+    width: 175px;
+  }
+  input:focus {
+    border: 1px solid lightgrey;
+    outline: none;
+  }
+  input[type="submit"] {
+    width: 198px;
+    background-color: rgb(164, 196, 183, 0.6);
+    outline: none;
+    border: none;
+    transition: background-color 0.4s;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: rgb(164, 196, 183, 0.8);
+  }
+  input[type="number"] {
+    display: inline-block;
+    width: 50px;
+    margin: 1px;
+    padding: 1px;
+    overflow: hidden;
+  }
+  .loginbutton {
+    position: relative;
+    display: block;
+  }
+  .loginbutton:hover .logindropdown-content {
+    display: block;
+  }
+  .loginform span {
+    color: white;
+    font-size: 10px;
+  }
+  .loginform span a {
+    color: white;
+  }
+  
+  .signupdropdown-content {
+    display: none;
+    position: relative;
+    top: -2.5%;
+    left: -2.5%;
+    padding: 5px;
+    margin: 20px 0px;
+  }
+  .signupform {
+    width: 75%;
+    margin: 10px 47px;
+    display: block;
+    text-align: center;
+  }
+  .signupbutton {
+    position: relative;
+    display: block;
+  }
+  .signupbutton:hover .signupdropdown-content {
+    display: block;
+  }
+  .signupform span {
+    color: white;
+    font-size: 10px;
+  }
+  .signupform span a {
+    color: white;
+  }
+  .birthdate {
+    position: relative;
+    left: -5%;
+  }
+  .createaccount {
+    position: relative;
+    right: -5%;
+  }
+  
+  @media screen and (max-height: 550px) {
+    html {
+      overflow: visible;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    
+  }
+  
