@@ -60,18 +60,18 @@ router.post('/',function(req,res){
    newapi.save();})
 
 
-           router.delete('/:userID',function(req,res){
-            var id=req.params.userID;
-            console.log(id);
-            console.log('yahan pahuch gye')
-            apimodel.deleteOne({username:id})
+        //    router.delete('/:userID',function(req,res){
+        //     var id=req.params.userID;
+        //     console.log(id);
+        //     console.log('yahan pahuch gye')
+        //     apimodel.deleteOne({username:id})
         
-            .exec()
-            .then(res=>{
-                console.log(res)
-            })
+        //     .exec()
+        //     .then(res=>{
+        //         console.log(res)
+        //     })
             
-        })
+        // })
 
 // router.put('/:userID',function(req,res){
 //     var id=req.params.userID;

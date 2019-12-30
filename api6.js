@@ -7,7 +7,7 @@ function fun(){
     {
         arr[i]=0;
     }
-    arr[0]++;
+    arr[15]++;
     axios.post('http://localhost:3001/api',{
         username: un,
         api1_1 : arr[0],
@@ -45,7 +45,7 @@ function fun1(){
     {
         arr[i]=0;
     }
-    arr[1]++;
+    arr[16]++;
     axios.post('http://localhost:3001/api',{
         username: un,
         api1_1 : arr[0],
@@ -83,7 +83,7 @@ function fun2(){
     {
         arr[i]=0;
     }
-    arr[2]++;
+    arr[17]++;
     axios.post('http://localhost:3001/api',{
         username: un,
         api1_1 : arr[0],
