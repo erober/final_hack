@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 const apiSchema= mongoose.Schema({
     
-    username: {type: String, required:true},
+    username: {type: String, required:true,unique:true},
     api1_1: {type:Number},
     api1_2: {type:Number},
     api1_3: {type:Number},

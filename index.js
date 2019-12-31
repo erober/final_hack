@@ -16,7 +16,7 @@ mongoose.connect("mongodb+srv://utkarshkoushik00:ut6060007@uk007-4lmzk.mongodb.n
 });
 
 const users=require('./routes/user');
-const api=require('./routes/api');
+const api=require('./routes/api_2');
 
 app.use(morgan('dev'));
 app.use(parser.json());

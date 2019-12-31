@@ -3,6 +3,14 @@ var un=sessionStorage.getItem('un');
 
     
 function fun(){
+    axios.get()
+    
+    
+    
+    
+    
+    
+    
     for (let i=0;i<18;i++)
     {
         arr[i]=0;
