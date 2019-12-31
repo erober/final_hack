@@ -41,6 +41,7 @@ router.post('/:userID',(req,res)=>
         lowBalanceAlert: req.body.lowBalanceAlert
      })
    newuser.save()
+   res.send("Done")
 })
 
 
